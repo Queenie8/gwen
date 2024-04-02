@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Queenie Pokémon Midterm</title>
+  <style>
+  
+      body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: oblique;
+        font-size: 25px;
+        background: linear-gradient(to right, #A0E9FF, #FFDFDF); }
+
+      /* Header Styling */
+      header {
+        color: #111E6C; 
+        padding: 20px 0;
+        text-shadow: 2px 2px 4px rgba(255, 255, 0, 0.8);
+      }
+
+      /* Main Content Styling */
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+      }
+
+      /* Pokemon Section Styling with Background Pattern */
+      .pokemon {
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+        width: 300px;
+        transition: transform 0.1s ease-in-out; /* Smooth scaling transition */
+        background-image: url('https://i.pinimg.com/564x/aa/8d/a9/aa8da9413fe57e4e64ff50141ad77435.jpg'); 
+          background-size: cover; /* Adjust as needed: cover, contain, or specific size */
+          background-position: center; /* Adjust as needed: center, top, bottom, left, right, etc. */
+          background-repeat: no-repeat; 
+
+          flex: 1 0 40%; /* flex-grow: 1, flex-shrink: 0, flex-basis: 40% */
+      }
+
+      .pokemon:hover {
+        transform: translateY(-10px); /* Move up slightly on hover */
+      }
+
+      /* Pokemon Image Styling with Zoom Effect */
+      .info img.first-image {
+        width: 100%; /* Full width for the first image */
+        max-width: 300px; /* Maximum width to maintain responsiveness */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px; /* Rounded corners */
+        margin-bottom: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle box shadow */
+        border: 4px solid transparent; /* White border for contrast */
+        transition: transform 0.1s ease-in-out; /* Smooth zoom transition */
+      }
+
+      .info img.first-image:hover {
+        transform: scale(1.0); /* Zoom in on hover */
+      }
+
+      /* Pokemon Information Styling */
+      .info p {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;        
+        color: #121638; /* Change the text color for information */
+        line-height: 1.3; /* Line height for better readability */
+      }
+
+      /* Evolution Images Styling */
+      .evolutions img {
+        width: 70px; /* Fixed width for evolution images */
+        height: 70px; /* Fixed height for evolution images */
+        margin: 5px;
+        border-radius: 5px; /* Rounded corners */
+        border: 2px solid transparent; /* Transparent border initially */
+        transition: transform 0.1s ease-in-out, border-color 0.1s ease-in-out; /* Smooth transition */
+      }
+    
+
+      .evolutions img:hover {
+        transform: scale(1.5); /* Scale up on hover */
+        border-color: #1f92a6; /* Highlight border color on hover */
+      }
+      .evo{
+        text-align: center;
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="evo">POKEMONS AND THEIR EVOLUTIONS</h1>
+  </header>
+
+  <main>
+    <!-- Your Pokemon sections here -->
+	<section class="pokemon">
+      <h2>FROAKIE</h2>
+      <div class="info">
+        <img src="/pokemon/froakieEvo.gif" alt="FROAKIE" class="first-image">
+        <p>Froakie is a Water-type Pokémon introduced in Generation VI and is the Water-type Starter of Kalos.</p>
+      </div>
+      <div class="evolutions">
+        <h3>Evolutions</h3>
+        <ul>
+          <li>FROGADIER <img src="https://i.pinimg.com/originals/48/24/c0/4824c0e71a2e586b65d78ddae3358ea8.png" alt="FROGADIER"></li>
+		      <li>GRENINJA <img src="https://upload.wikimedia.org/wikipedia/en/6/6e/Pok%C3%A9mon_official_artwork_of_Greninja.png" alt="GRENINJA"></li>
+        </ul>
+      </div>
+    </section>
+  
+    <section class="pokemon">
+      <h2>CHARMANDER</h2>
+      <div class="info">
+        <img src="/pokemon/CharmanderEvo.gif" alt="CHARMANDER" class="first-image">
+        <p>Charmander, known as Hitokage in Japan, is a Pokémon species in Nintendo's and Game Freak's Pokémon franchise.</p>
+      </div>
+      <div class="evolutions">
+        <h3>Evolutions</h3>
+        <ul>
+          <li>CHARMELEON <img src="https://dextraneous.files.wordpress.com/2019/07/005-1.png" alt="CHARMELEON"></li>
+          <li>CHARIZARD <img src="https://ssb.wiki.gallery/images/thumb/2/21/Charizard_SSBU.png/800px-Charizard_SSBU.png" alt="CHARIZARD"></li>
+        </ul>
+      </div>
+    </section>
+	<br>
+	<section class="pokemon">
+      <h2>BULBASAUR</h2>
+      <div class="info">
+        <img src="/pokemon/BulbasaurEvo.gif" alt="BULBASAUR" class="first-image">
+        <p>Bulbasaur is a Grass/Poison-type Pokémon species in Nintendo and Game Freak's Pokémon franchise. </p>
+      </div>
+      <div class="evolutions">
+        <h3>Evolutions</h3>
+        <ul>
+          <li>IVYSAUR <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" alt="IVYSAUR"></li>
+          <li>VENUSAUR <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="VENUSAUR"></li>
+        </ul>
+      </div>
+    </section>
+	
+	<section class="pokemon">
+      <h2>SQUIRTLE</h2>
+      <div class="info">
+        <img src="/pokemon/SquirtleEvo.gif" alt="SQUIRTLE" class="first-image">
+        <p>Squirtle, known as Zenigame in Japan, is a Pokémon species in Nintendo and Game Freak's Pokémon franchise. It was designed by Atsuko Nishida. Its name was changed from Zenigame to Squirtle during the English localization of the series in order to give it a "clever and descriptive name."</p>
+      </div>
+      <div class="evolutions">
+        <h3>Evolutions</h3>
+        <ul>
+          <li>WARTORTLE <img src="https://dextraneous.files.wordpress.com/2019/07/008.png" alt="WARTORTLE"></li>
+          <li>BLASTOISE <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png" alt="BLASTOISE"></li>
+        </ul>
+      </div>
+    </section>
+	
+	<section class="pokemon">
+      <h2>PIKACHU</h2>
+      <div class="info">
+        <img src="/pokemon/PikachuEvo.gif" alt="PIKACHU\" class="first-image">
+        <p>Pikachu is a fictional species in the Pokémon media franchise. </p>
+      </div>
+      <div class="evolutions">
+        <h3>Evolutions</h3>
+        <ul>
+          <li>PICHU <img src="https://i.pinimg.com/originals/7d/22/d6/7d22d6f4a9510183539bb571cd9bc85b.png" alt="PICHU"></li>
+          <li>RAICHU <img src="https://static.pokemonpets.com/images/monsters-images-800-800/26-Raichu.webp" alt="RAICHU"></li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="pokemon">
+      <h2>FENNEKIN</h2>
+      <div class="info">
+        <img src="/pokemon/FennekinEvo.gif" alt="FENNEKIN" class="first-image">
+        <p>Fennekin is a Fire-type Pokémon introduced in Generation VI. It is the Fire-type Starter of Kalos.</p>
+      </div>
+      <div class="evolutions">
+        <h3>Evolutions</h3>
+        <ul>
+          <li>BRAIXEN <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/653.png" alt="BRAIXEN"></li>
+          <li>DELPHOX <img src="https://www.pngmart.com/files/22/Delphox-Pokemon-PNG-Photos.png" alt="DELPHOX"></li>
+        </ul>
+      </div>
+    </section>
+	
+	<section class="pokemon">
+      <h2>SNORUNT</h2>
+      <div class="info">
+        <img src="/pokemon/SnoruntEvo.gif" alt="SNORUNT" class="first-image">
+        <p>Snorunt is an Ice-type Pokémon introduced in Generation III.</p>
+      </div>
+      <div class="evolutions">
+        <h3>Evolutions</h3>
+        <ul>
+          <li>GLALIE <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/362_f2.png" alt="GLALIE"></li>
+          <li>FLOSLASS <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/478.png" alt="FLOSFLASS"></li>
+        </ul>
+      </div>
+    </section>
+	
+	<section class="pokemon">
+      <h2>CHESPIN</h2>
+      <div class="info">
+        <img src="/pokemon/ChespinEvo.gif" alt="CHESPIN" class="first-image">
+        <p>Chespin (Japanese: ハリマロン Harimaron) is a Grass-type Pokémon introduced in Generation VI.</p>
+      </div>
+      <div class="evolutions">
+        <h3>Evolutions</h3>
+        <ul>
+          <li>QUILLADIN <img src="https://img.rankedboost.com/wp-content/uploads/2022/11/Pokemon-Scarlet-and-Violet-Chesnaught.png" alt="QUILLADIN"></li>
+          <li>CHESNAUGHT <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/652.png" alt="CHESNAUGHT"></li>
+        </ul>
+      </div>
+    </section>
+	
+	<section class="pokemon">
+      <h2>SCYTHER</h2>
+      <div class="info">
+        <img src="https://gamingintel.com/wp-content/uploads/2022/02/Pokemon-Legends-Arceus-How-to-Evolve-Scyther-into-Kleavor-or-Scizor.jpg" alt="SCYTHER" class="first-image">
+        <p>Scyther is a Bug/Flying-type Pokémon introduced in Generation.</p>
+      </div>
+      <div class="evolutions">
+        <h3>Evolutions</h3>
+        <ul>
+          <li>SCIZOR <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/212_f2.png" alt="SCIZOR"></li>
+          <li>KLEAVOR <img src="https://www.serebii.net/pokemon/art/900.png" alt="KLEAVOR"></li>
+        </ul>
+      </div>
+    </section>
+	
+	<section class="pokemon">
+      <h2>JIGGLYBUFF</h2>
+      <div class="info">
+        <img src="/pokemon/JigglybuffEvo.gif" alt="JIGGLYBUFF" class="first-image">
+        <p>Jigglypuff, known in Japan as Purin, is a Pokémon species.</p>
+      </div>
+      <div class="evolutions">
+        <h3>Evolutions</h3>
+        <ul>
+          <li>IGYBUFF <img src="https://1.bp.blogspot.com/-IIHBZmmy2kk/VczhoQmTSNI/AAAAAAAABQk/7QG8V48C1LI/s1600/174Igglybuff.png" alt="IGYBUFF"></li>
+          <li>WIGGLYBUFF <img src="https://archives.bulbagarden.net/media/upload/thumb/1/10/UNITE_Wigglytuff.png/220px-UNITE_Wigglytuff.png" alt="WIGGLYBUFF"></li>
+        </ul>
+      </div>
+    </section>
+    <audio  controls autoplay loop src="/pokemon/Pikachu Song - Pokemon Go Dance   Pokemon Song Remix.mp3"></audio>
+	
+  </main>
+</body>
+</html>
